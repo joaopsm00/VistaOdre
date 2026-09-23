@@ -12,74 +12,62 @@
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #faf9f6; /* Off-white sofisticado estilo editorial */
+            background-color: #faf9f6; /* Branco off-white sofisticado estilo editorial de moda */
         }
     </style>
 </head>
 <body class="text-[#3b140f] min-h-screen flex flex-col justify-between selection:bg-[#3b140f] selection:text-white">
 
-    <!-- Topo / Header -->
-    <header class="w-full max-w-7xl mx-auto px-8 md:px-16 py-10 flex justify-between items-center">
+    <!-- Topo / Header Minimalista com a linha fina divisória -->
+    <header class="w-full max-w-7xl mx-auto px-8 py-6 flex justify-between items-center border-b border-neutral-200">
         <div class="flex items-center gap-3">
-            <img src="logo.png" alt="Odre" class="h-10 object-contain">
+            <img src="logo.png" alt="Odre" class="h-9 object-contain">
         </div>
-        <a href="https://instagram.com/vistaodre" target="_blank" class="text-xs tracking-[0.25em] uppercase text-neutral-400 hover:text-[#3b140f] transition-all">
+        <a href="https://instagram.com/vistaodre" target="_blank" class="text-[11px] tracking-[0.25em] uppercase text-neutral-400 hover:text-[#3b140f] transition-all">
             @vistaodre
         </a>
     </header>
 
-    <!-- Conteúdo Principal Adaptado para o Tamanho da Tela -->
-    <main class="w-full max-w-7xl mx-auto px-8 md:px-16 my-auto py-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        
-        <!-- Coluna da Esquerda: Marca e Mensagem (Ocupa mais espaço no desktop) -->
-        <div class="lg:col-span-7 text-center lg:text-left">
-            <div class="mb-8 flex justify-center lg:justify-start">
-                <div class="w-36 md:w-44 flex items-center justify-center p-2">
-                    <img src="logo.png" alt="Odre Logo" class="w-full h-full object-contain">
-                </div>
+    <!-- Conteúdo Principal -->
+    <main class="w-full max-w-xl mx-auto px-6 text-center my-auto py-12">
+        <!-- Ícone / Logo Central com moldura suave -->
+        <div class="mb-10 flex justify-center">
+            <div class="w-40 md:w-48 flex items-center justify-center p-3 transition-transform duration-700 hover:scale-105">
+                <img src="logo.png" alt="Odre Logo" class="w-full h-full object-contain">
             </div>
-
-            <span class="inline-block text-[10px] uppercase tracking-[0.4em] text-neutral-400 mb-4 font-medium">Em breve</span>
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6 text-[#3b140f] leading-tight">
-                Vinho novo, <br class="hidden lg:block">vestes novas.
-            </h1>
-            <p class="text-neutral-600 text-base md:text-lg font-light leading-relaxed mb-6 max-w-xl mx-auto lg:mx-0">
-                Mais do que tecido: uma mensagem viva para ser vestida e anunciada por onde você for.
-            </p>
-            <p class="text-neutral-400 text-xs md:text-sm tracking-wider italic font-light">
-                "E ninguém deita vinho novo em odres velhos..." — Mc 2:22
-            </p>
         </div>
 
-        <!-- Coluna da Direita: Área de Captura de E-mail destacada -->
-        <div class="lg:col-span-5 bg-white p-8 md:p-10 border border-neutral-200/80 shadow-sm">
-            <h3 class="text-lg font-medium mb-2 tracking-wide">Seja o primeiro a saber</h3>
-            <p class="text-neutral-500 text-xs md:text-sm font-light mb-6 leading-relaxed">
-                Inscreva-se para garantir acesso antecipado ao lançamento da nossa primeira coleção.
-            </p>
+        <span class="inline-block text-[10px] uppercase tracking-[0.4em] text-neutral-400 mb-4 font-medium">Em breve</span>
+        <h1 class="text-3xl md:text-5xl font-light tracking-tight mb-6 text-[#3b140f]">
+            Vinho novo, vestes novas.
+        </h1>
+        <p class="text-neutral-600 text-sm md:text-base font-light leading-relaxed mb-6 max-w-md mx-auto">
+            Mais do que tecido: uma mensagem viva para ser vestida e anunciada por onde você for.
+        </p>
+        <p class="text-neutral-400 text-xs tracking-wider italic mb-12 font-light">
+            "E ninguém deita vinho novo em odres velhos..." — Mc 2:22
+        </p>
 
-            <!-- Formulário integrado com Formspree -->
-            <form action="https://formspree.io/f/xoevwynq" method="POST" class="flex flex-col gap-4">
-                <input 
-                    type="email" 
-                    name="email"
-                    required 
-                    placeholder="Insira o seu melhor e-mail" 
-                    class="bg-neutral-50 border border-neutral-200 text-sm px-4 py-3.5 focus:outline-none focus:border-[#3b140f] text-[#3b140f] placeholder-neutral-400 transition-all"
-                >
-                <button 
-                    type="submit" 
-                    class="bg-[#3b140f] text-white text-xs uppercase tracking-[0.2em] font-medium py-4 hover:bg-neutral-900 transition-all shadow-sm cursor-pointer"
-                >
-                    Notificar-me no lançamento
-                </button>
-            </form>
-        </div>
-
+        <!-- Formulário integrado com Formspree (Design Clean & Sharp) -->
+        <form action="https://formspree.io/f/xoevwynq" method="POST" class="flex flex-col sm:flex-row gap-2 justify-center max-w-md mx-auto">
+            <input 
+                type="email" 
+                name="email"
+                required 
+                placeholder="Insira o seu melhor e-mail" 
+                class="bg-white border border-neutral-200 text-sm px-5 py-3.5 focus:outline-none focus:border-[#3b140f] text-[#3b140f] placeholder-neutral-400 flex-1 transition-all shadow-sm"
+            >
+            <button 
+                type="submit" 
+                class="bg-[#3b140f] text-white text-[11px] uppercase tracking-[0.2em] font-medium px-7 py-3.5 hover:bg-neutral-900 transition-all shadow-sm cursor-pointer"
+            >
+                Notificar-me
+            </button>
+        </form>
     </main>
 
-    <!-- Rodapé -->
-    <footer class="w-full max-w-7xl mx-auto px-8 md:px-16 py-10 text-center lg:text-left text-[11px] text-neutral-400 tracking-[0.2em] uppercase font-light">
+    <!-- Rodapé Discreto -->
+    <footer class="w-full max-w-7xl mx-auto px-8 py-10 text-center text-[11px] text-neutral-400 tracking-[0.2em] uppercase font-light">
         &copy; 2026 Vista Odre. Todos os direitos reservados.
     </footer>
 
